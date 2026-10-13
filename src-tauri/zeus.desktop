@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Zeus
+Comment=AI agents on Arch Linux
+Exec=zeus
+Icon=zeus
+Type=Application
+Categories=Development;Utility;AI;
+Keywords=ai;chat;assistant;mcp;llm;agent;zeus;
+StartupNotify=true
+Terminal=false
+X-GNOME-UsesNotifications=true
+X-AppImage-Version=0.1.0
+Encoding=UTF-8
+StartupWMClass=zeus

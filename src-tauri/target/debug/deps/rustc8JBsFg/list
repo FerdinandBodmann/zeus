@@ -1,0 +1,8 @@
+{
+  global:
+    __rustc_proc_macro_decls_d7abefffbc972e01__;
+    rust_metadata_tauri_macros_d7abefffbc972e01;
+
+  local:
+    *;
+};

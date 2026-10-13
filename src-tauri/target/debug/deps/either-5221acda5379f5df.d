@@ -1,0 +1,11 @@
+/home/imgsh/zeus/src-tauri/target/debug/deps/either-5221acda5379f5df.d: /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/lib.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged_optional.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/iterator.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/into_either.rs
+
+/home/imgsh/zeus/src-tauri/target/debug/deps/libeither-5221acda5379f5df.rlib: /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/lib.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged_optional.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/iterator.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/into_either.rs
+
+/home/imgsh/zeus/src-tauri/target/debug/deps/libeither-5221acda5379f5df.rmeta: /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/lib.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged_optional.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/iterator.rs /home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/into_either.rs
+
+/home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/lib.rs:
+/home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged.rs:
+/home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/serde_untagged_optional.rs:
+/home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/iterator.rs:
+/home/imgsh/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.19.0/src/into_either.rs:
