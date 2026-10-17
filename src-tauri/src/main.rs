@@ -30,11 +30,6 @@ fn get_system_info() -> serde_json::Value {
 }
 
 fn main() {
-    // Work around a webkit2gtk/Wayland bug:
-    // "Error 71 (Protocol error) dispatching to Wayland display"
-    // Disabling DMA-BUF forces webkit to use a working rendering path.
-    std::env::set_var("WEBKIT_DISABLE_DMABUF", "1");
-
     tauri::Builder::default()
         .plugin(tauri_plugin_store::Builder::new().build())
         .plugin(tauri_plugin_opener::init())
