@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Toaster } from 'sonner'
@@ -26,20 +25,18 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ZeusProvider>
         <BrowserRouter>
-          <div className="h-full flex flex-col">
-            <Toaster position="top-right" toastOptions={{ className: 'bg-dark-card border-dark-border text-dark-text' }} />
-            <Routes>
-              <Route path="/" element={<Layout><ChatView /></Layout>}>
-                <Route index element={<ChatView />} />
-                <Route path="conversations" element={<ConversationsView />} />
-                <Route path="api-keys" element={<ApiKeysView />} />
-                <Route path="providers" element={<ProvidersView />} />
-                <Route path="models" element={<ModelsView />} />
-                <Route path="mcp" element={<McpView />} />
-                <Route path="settings" element={<SettingsView />} />
-              </Route>
-            </Routes>
-          </div>
+          <Toaster position="top-right" toastOptions={{ className: 'bg-dark-card border-dark-border text-dark-text' }} />
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<ChatView />} />
+              <Route path="conversations" element={<ConversationsView />} />
+              <Route path="api-keys" element={<ApiKeysView />} />
+              <Route path="providers" element={<ProvidersView />} />
+              <Route path="models" element={<ModelsView />} />
+              <Route path="mcp" element={<McpView />} />
+              <Route path="settings" element={<SettingsView />} />
+            </Route>
+          </Routes>
         </BrowserRouter>
       </ZeusProvider>
     </QueryClientProvider>

@@ -56,7 +56,7 @@ export interface Conversation {
 
 export interface ConversationCreate {
   title: string;
-  modelId: string;
+  modelId?: string;
 }
 
 export interface Message {

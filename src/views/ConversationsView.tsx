@@ -13,7 +13,7 @@ export function ConversationsView() {
   const handleNewConversation = async () => {
     const conv = await createConversation({
       title: 'New Conversation',
-      modelId: '',
+      modelId: undefined,
     })
     setCurrentConversation(conv)
     clearMessages()

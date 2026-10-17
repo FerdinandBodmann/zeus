@@ -1,5 +1,4 @@
-import type { ReactNode } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, Outlet } from 'react-router-dom'
 import { useZeus } from '../context/ZeusContext'
 import { useConversationStore } from '../stores/conversations'
 import { useMcpStore } from '../stores/mcp'
@@ -21,7 +20,7 @@ import {
   Bot
 } from 'lucide-react'
 
-export function Layout({ children }: { children: ReactNode }) {
+export function Layout() {
   const { sidebarOpen, setSidebarOpen } = useZeus()
   const { conversations } = useConversationStore()
   const { providers } = useProviderStore()
@@ -139,7 +138,7 @@ export function Layout({ children }: { children: ReactNode }) {
             <span className="font-bold">zeus</span>
           </div>
         </div>
-        {children}
+        <Outlet />
       </main>
     </div>
   )

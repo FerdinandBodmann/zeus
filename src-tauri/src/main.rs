@@ -1,7 +1,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use tauri::Manager;
-
 mod commands;
 mod models;
 mod services;
@@ -10,6 +8,25 @@ mod mcp;
 #[tauri::command]
 fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
+}
+
+#[tauri::command]
+fn get_system_info() -> serde_json::Value {
+    let os = std::env::consts::OS;
+    let arch = std::env::consts::ARCH;
+    let hostname = std::process::Command::new("hostname")
+        .output()
+        .ok()
+        .and_then(|o| String::from_utf8(o.stdout).ok())
+        .unwrap_or_default()
+        .trim()
+        .to_string();
+
+    serde_json::json!({
+        "os": os,
+        "arch": arch,
+        "hostname": hostname,
+    })
 }
 
 fn main() {
@@ -24,6 +41,7 @@ fn main() {
         .plugin(tauri_plugin_http::init())
         .invoke_handler(tauri::generate_handler![
             greet,
+            get_system_info,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

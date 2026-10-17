@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { invoke } from '@tauri-apps/api/core'
-import { Conversation, Message } from '../types'
+import { Conversation, Message, ConversationCreate } from '../types'
 
 interface ConversationState {
   conversations: Conversation[]
@@ -9,7 +9,7 @@ interface ConversationState {
   loading: boolean
   loadConversations: () => Promise<void>
   loadConversation: (id: string) => Promise<void>
-  createConversation: (data: Omit<Conversation, 'id' | 'createdAt' | 'updatedAt'>) => Promise<Conversation>
+  createConversation: (data: ConversationCreate) => Promise<Conversation>
   updateConversation: (id: string, data: Partial<Conversation>) => Promise<void>
   deleteConversation: (id: string) => Promise<void>
   addMessage: (message: Omit<Message, 'id' | 'createdAt'>) => Promise<void>
